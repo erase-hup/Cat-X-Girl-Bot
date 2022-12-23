@@ -21,7 +21,7 @@ Pillow
 CurrencyConverter
 jikanpy
 emoji==1.7.0
-speedtest-cli
+
 regex
 bleach
 git+https://github.com/trentm/python-markdown2.git
@@ -36,7 +36,7 @@ ujson
 pretty_errors
 TgCrypto
 Pyrogram
-youtube_search
+
 asyncio
 dateparser
 pymongo
@@ -57,4 +57,4 @@ motor
 python-arq
 telegram
 gpytranslate
-yt_dlp
+
