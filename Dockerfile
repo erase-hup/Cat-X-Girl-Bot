@@ -64,8 +64,13 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/FallenRobot
+
 RUN git clone https://github.com/AnonymousX1025/FallenRobot /root/FallenRobot
+# Install requirements
+RUN pip3 install -U -r requirements.txt
+
+# Copy Python Requirements to /root/FallenRobot
+
 WORKDIR /root/CatXGirl
 
 #Copy config file to /root/FallenRobot/FallenRobot
@@ -73,8 +78,7 @@ COPY ./CatXGirl/sample_config.py ./CatXGirl/config.py* /root/CatXGirl/CatXGirl/
 
 ENV PATH="/home/bot/bin:$PATH"
 
-# Install requirements
-RUN pip3 install -U -r requirements.txt
+
 
 # Starting Worker
 CMD ["python3","-m","CatXGirl"]
