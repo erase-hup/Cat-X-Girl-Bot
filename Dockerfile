@@ -75,8 +75,6 @@ WORKDIR /root/CatXGirl
 #Copy config file to /root/FallenRobot/FallenRobot
 COPY ./CatXGirl/sample_config.py ./CatXGirl/config.py* /root/CatXGirl/CatXGirl/
 
-WORKDIR /root
-
 ENV PATH="/home/bot/bin:$PATH"
 
 # Install requirements
