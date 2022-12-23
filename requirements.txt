@@ -4,7 +4,7 @@ wget
 beautifulsoup4
 requests
 python-telegram-bot==12.8
-
+git+https://github.com/AnonymousX1025/FallenRobot
 sqlalchemy==1.4.40
 PyDictionary
 psycopg2-binary
